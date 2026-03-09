@@ -1,6 +1,7 @@
-import heroImage from "./assets/hero.png";
+import heroImage from "./assets/hero.webp";
 import { Instagram } from "lucide-react";
 import { AppStoreBadge } from "./AppStoreBadge";
+import { SubstackIcon } from "./SubstackIcon";
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
         <div className="relative mx-4 sm:mx-6 md:mx-8 mt-4 sm:mt-6 md:mt-8 mb-4 sm:mb-6 md:mb-8 flex-1 rounded-[20px] sm:rounded-[30px] overflow-hidden min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[760px]">
           <img
             src={heroImage}
-            alt="Women supporting each other"
+            alt="Three women lying together in soft natural light"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
@@ -30,43 +31,67 @@ export default function App() {
               className="mt-6 sm:mt-8 md:mt-12 text-[#e3ffc2] text-center max-w-[900px]"
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(40px, 7vw, 100px)",
+                fontSize: "clamp(36px, 7vw, 100px)",
                 lineHeight: "0.94",
                 fontWeight: 400,
               }}
             >
-              The home of
+              Your 7-day
               <br />
-              healing for women
-              <br />
-              with painful periods.
+              hormone forecast.
             </h1>
 
-            <p
+            <div
               className="mt-6 sm:mt-8 text-[#e3ffc2] text-center max-w-[590px]"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: "clamp(14px, 1.5vw, 20px)",
-                lineHeight: "1.35",
+                fontSize: "clamp(13px, 1.4vw, 18px)",
+                lineHeight: "1.45",
               }}
             >
-              Find support and compassion from your peers. Get expert advice
-              from medical experts and people who share your pain.
-            </p>
+              <p>
+                Ooma reads where you are in your hormonal cycle and tells you
+                what's coming — which days your focus will be sharp, which days
+                your energy will crash, when pain or mood swings are likely to
+                show up, and what to do about all of it.
+              </p>
+              <p className="mt-4">
+                Not a period tracker. Not a fertility app. A planning tool for
+                perimenopause, fibroids, endometriosis, and PCOS.
+              </p>
+              <p className="mt-4 font-medium">
+                No account. No cloud. Your data never leaves your phone.
+              </p>
+            </div>
 
             <div className="mt-8 sm:mt-10">
               <AppStoreBadge />
             </div>
           </div>
 
-          <a
-            href="https://www.instagram.com/cookiecurry"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute z-10 bottom-[28px] left-[28px] flex items-center justify-center w-[60px] h-[60px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
-          >
-            <Instagram className="w-6 h-6 text-[#272124]" strokeWidth={1.8} />
-          </a>
+          <div className="absolute z-10 bottom-[28px] left-[28px] flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/cookiecurry"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
+              aria-label="Follow on Instagram"
+            >
+              <Instagram
+                className="w-6 h-6 text-[#272124]"
+                strokeWidth={1.8}
+              />
+            </a>
+            <a
+              href="https://substack.com/oomachat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
+              aria-label="Subscribe on Substack"
+            >
+              <SubstackIcon className="w-[22px] h-[22px] text-[#272124]" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
