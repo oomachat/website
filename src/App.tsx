@@ -2,6 +2,7 @@ import heroImage from "./assets/hero.webp";
 import { Instagram } from "lucide-react";
 import { AppStoreBadge } from "./AppStoreBadge";
 import { SubstackIcon } from "./SubstackIcon";
+import { FooterLinks } from "./FooterLinks";
 
 export default function App() {
   return (
@@ -63,10 +64,15 @@ export default function App() {
                 No account. No cloud. Your data never leaves your phone.
               </p>
             </div>
-
           </div>
 
-          <div className="absolute z-10 bottom-[28px] right-[28px] flex items-center gap-3">
+          {/* Footer links — bottom center */}
+          <div className="absolute z-10 bottom-[28px] left-0 right-0 flex justify-center">
+            <FooterLinks light />
+          </div>
+
+          {/* CTA + social — bottom right */}
+          <div className="absolute z-10 bottom-[60px] right-[28px] flex items-center gap-3">
             <AppStoreBadge />
             <a
               href="https://www.instagram.com/oomachat"
