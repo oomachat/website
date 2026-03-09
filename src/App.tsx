@@ -17,11 +17,11 @@ export default function App() {
 
           <div className="relative z-10 flex flex-col items-center px-4 sm:px-8 md:px-12 pt-8 sm:pt-10 md:pt-12">
             <p
-              className="text-white text-center"
+              className="text-[#ffffff] text-center"
               style={{
                 fontFamily: "'Fraunces', 'Georgia', serif",
                 fontSize: "clamp(32px, 4vw, 48px)",
-                fontWeight: 400,
+                fontWeight: 200,
               }}
             >
               ooma
@@ -64,21 +64,19 @@ export default function App() {
               </p>
             </div>
 
-            <div className="mt-8 sm:mt-10">
-              <AppStoreBadge />
-            </div>
           </div>
 
-          <div className="absolute z-10 bottom-[28px] left-[28px] flex items-center gap-3">
+          <div className="absolute z-10 bottom-[28px] right-[28px] flex items-center gap-3">
+            <AppStoreBadge />
             <a
               href="https://www.instagram.com/cookiecurry"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
+              className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
               aria-label="Follow on Instagram"
             >
               <Instagram
-                className="w-6 h-6 text-[#272124]"
+                className="w-5 h-5 sm:w-6 sm:h-6 text-[#272124]"
                 strokeWidth={1.8}
               />
             </a>
@@ -86,10 +84,10 @@ export default function App() {
               href="https://substack.com/oomachat"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
+              className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
               aria-label="Subscribe on Substack"
             >
-              <SubstackIcon className="w-[22px] h-[22px] text-[#272124]" />
+              <SubstackIcon className="w-5 h-5 sm:w-[22px] sm:h-[22px] text-[#272124]" />
             </a>
           </div>
         </div>
