@@ -69,7 +69,7 @@ export default function App() {
           <div className="absolute z-10 bottom-[28px] right-[28px] flex items-center gap-3">
             <AppStoreBadge />
             <a
-              href="https://www.instagram.com/cookiecurry"
+              href="https://www.instagram.com/oomachat"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
