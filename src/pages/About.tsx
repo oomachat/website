@@ -47,7 +47,17 @@ export function AboutPage() {
         Ooma data.
       </p>
 
-      <p className="mt-8 font-medium text-[#272124]">— Kristy</p>
+      <p className="mt-8 font-medium text-[#272124]">
+        —{" "}
+        <a
+          href="https://www.linkedin.com/in/kristycurry/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:no-underline"
+        >
+          Kristy
+        </a>
+      </p>
     </PageLayout>
   );
 }
