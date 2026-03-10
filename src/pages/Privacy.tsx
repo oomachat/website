@@ -74,6 +74,41 @@ export function PrivacyPage() {
           fontWeight: 400,
         }}
       >
+        Subscription billing
+      </h2>
+      <p className="mt-4">
+        We use RevenueCat to manage subscription billing. RevenueCat processes
+        your anonymous App Store subscriber ID and subscription status (active,
+        expired, or trial) to verify your access to Ooma. This is billing data
+        that Apple already handles as part of the purchase process.
+      </p>
+      <p className="mt-4">
+        RevenueCat does not receive your name, email address, health data,
+        hormonal profile, daily check-ins, cycle dates, symptom preferences, or
+        any other information you enter in Ooma. Your hormonal health data never
+        leaves your device — RevenueCat only sees whether you have an active
+        subscription, not what you use Ooma for.
+      </p>
+      <p className="mt-4">
+        We do not enable any third-party analytics integrations through
+        RevenueCat. RevenueCat's privacy policy is available at{" "}
+        <a
+          href="https://www.revenuecat.com/privacy"
+          className="underline hover:no-underline"
+        >
+          revenuecat.com/privacy
+        </a>
+        .
+      </p>
+
+      <h2
+        className="mt-10 text-[#272124]"
+        style={{
+          fontFamily: "'Playfair Display', serif",
+          fontSize: "clamp(20px, 2.5vw, 28px)",
+          fontWeight: 400,
+        }}
+      >
         Ghost Mode
       </h2>
       <p className="mt-4">
