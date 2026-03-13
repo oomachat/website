@@ -30,6 +30,12 @@ export function FooterLinks({ light = false }: { light?: boolean }) {
           {link.label}
         </Link>
       ))}
+      <a
+        href="mailto:support@ooma.chat"
+        className={`${color} transition-colors`}
+      >
+        Support
+      </a>
     </nav>
   );
 }

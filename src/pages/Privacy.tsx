@@ -175,13 +175,12 @@ export function PrivacyPage() {
         Contact
       </h2>
       <p className="mt-4">
-        Questions about this policy can be directed to us through our Substack
-        at{" "}
+        Questions about this policy can be directed to{" "}
         <a
-          href="https://substack.com/oomachat"
+          href="mailto:support@ooma.chat"
           className="underline hover:no-underline"
         >
-          substack.com/oomachat
+          support@ooma.chat
         </a>
         .
       </p>

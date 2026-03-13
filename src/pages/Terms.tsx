@@ -8,8 +8,7 @@ export function TermsPage() {
       </p>
 
       <p className="mt-5">
-        By downloading or using Ooma, you agree to these terms. Please read them
-        carefully.
+        By downloading or using Ooma, you agree to these terms.
       </p>
 
       <h2
@@ -79,8 +78,7 @@ export function TermsPage() {
         Ooma's forecasts are probabilistic estimates, not guarantees. Forecast
         accuracy varies based on your condition, the regularity of your cycles,
         the consistency of your check-ins, and biological variability. Days
-        further out in the forecast are less certain than near-term days. Ooma is
-        transparent about confidence levels within the app.
+        further out in the forecast are less certain than near-term days.
       </p>
 
       <h2
@@ -94,9 +92,31 @@ export function TermsPage() {
         Subscriptions and billing
       </h2>
       <p className="mt-4">
-        Ooma may offer subscription plans through the Apple App Store. All
-        billing is handled by Apple through your Apple ID. Subscription terms,
-        pricing, cancellation, and refunds are governed by Apple's terms of
+        Ooma offers one auto-renewable subscription:
+      </p>
+      <ul className="mt-4 list-disc pl-6 space-y-1">
+        <li>
+          <strong>Title:</strong> Ooma Annual
+        </li>
+        <li>
+          <strong>Length:</strong> 1 year (with a 7-day free trial for new
+          subscribers)
+        </li>
+        <li>
+          <strong>Price:</strong> $29 per year (approximately $2.42 per month)
+        </li>
+      </ul>
+      <p className="mt-4">
+        Payment is charged to your Apple ID account at confirmation of purchase.
+        Your subscription automatically renews unless you cancel at least 24
+        hours before the end of the current period. Your account will be charged
+        for renewal within 24 hours before the end of the current period at the
+        same price. You can manage and cancel your subscription in your Apple ID
+        account settings after purchase.
+      </p>
+      <p className="mt-4">
+        Any unused portion of a free trial period will be forfeited when you
+        purchase a subscription. Refunds are governed by Apple's terms of
         service.
       </p>
 
@@ -143,13 +163,12 @@ export function TermsPage() {
         Contact
       </h2>
       <p className="mt-4">
-        Questions about these terms can be directed to us through our Substack
-        at{" "}
+        Questions about these terms can be directed to{" "}
         <a
-          href="https://substack.com/oomachat"
+          href="mailto:support@ooma.chat"
           className="underline hover:no-underline"
         >
-          substack.com/oomachat
+          support@ooma.chat
         </a>
         .
       </p>
