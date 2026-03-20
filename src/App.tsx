@@ -94,7 +94,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="py-4 sm:py-5 px-4">
+        <div className="py-3 sm:py-3 px-4 -mt-1 sm:-mt-2">
           <FooterLinks />
         </div>
       </div>
