@@ -1,7 +1,7 @@
 export function AppStoreBadge({ className = "" }: { className?: string }) {
   return (
     <a
-      href="https://apps.apple.com/app/ooma"
+      href="https://apps.apple.com/us/app/ooma-7-day-hormone-forecast/id6760321287"
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-block transition-transform hover:scale-105 active:scale-95 ${className}`}
