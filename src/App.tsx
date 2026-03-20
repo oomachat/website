@@ -64,38 +64,38 @@ export default function App() {
                 No account. No cloud. Your data never leaves your phone.
               </p>
             </div>
-          </div>
 
-          {/* Footer links — bottom center */}
-          <div className="absolute z-10 bottom-[28px] left-0 right-0 flex justify-center">
-            <FooterLinks light />
+            <div className="mt-8 sm:mt-10 flex flex-col items-center gap-4">
+              <AppStoreBadge />
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/oomachat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
+                  aria-label="Follow on Instagram"
+                >
+                  <Instagram
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-[#272124]"
+                    strokeWidth={1.8}
+                  />
+                </a>
+                <a
+                  href="https://substack.com/oomachat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
+                  aria-label="Subscribe on Substack"
+                >
+                  <SubstackIcon className="w-5 h-5 sm:w-[22px] sm:h-[22px] text-[#272124]" />
+                </a>
+              </div>
+            </div>
           </div>
+        </div>
 
-          {/* CTA + social — bottom right */}
-          <div className="absolute z-10 bottom-[60px] right-[28px] flex items-center gap-3">
-            <AppStoreBadge />
-            <a
-              href="https://www.instagram.com/oomachat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
-              aria-label="Follow on Instagram"
-            >
-              <Instagram
-                className="w-5 h-5 sm:w-6 sm:h-6 text-[#272124]"
-                strokeWidth={1.8}
-              />
-            </a>
-            <a
-              href="https://substack.com/oomachat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-[#FEB29A] hover:bg-[#fda487] transition-colors"
-              aria-label="Subscribe on Substack"
-            >
-              <SubstackIcon className="w-5 h-5 sm:w-[22px] sm:h-[22px] text-[#272124]" />
-            </a>
-          </div>
+        <div className="py-4 sm:py-5 px-4">
+          <FooterLinks />
         </div>
       </div>
     </div>
